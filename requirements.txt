@@ -1,0 +1,131 @@
+# =================================================================
+# FILE: requirements.txt
+# PURPOSE: Project dependencies for Social Media API
+# LOCATION: social_media_api/requirements.txt (PROJECT ROOT)
+# =================================================================
+
+# EXPLANATION: Core Django Framework
+# Django 4.2 LTS - Long Term Support version for stability
+Django==4.2.7
+
+# EXPLANATION: Django REST Framework for API development
+# Provides serializers, viewsets, authentication, permissions
+djangorestframework==4.2.0
+
+# EXPLANATION: Token Authentication
+# Simple token-based authentication for API access
+djangorestframework-authtoken==1.0.0
+
+# EXPLANATION: CORS Headers for Frontend Integration
+# Allows frontend apps to access your API from different domains
+django-cors-headers==4.3.1
+
+# EXPLANATION: Environment Variables Management
+# Securely manage secret keys, database URLs, etc.
+python-decouple==3.8
+
+# EXPLANATION: Image Processing (for profile pictures, post media)
+# Required for ImageField in models
+Pillow==10.1.0
+
+# EXPLANATION: Database Adapter (PostgreSQL for production)
+# Comment out if using SQLite for development only
+psycopg2-binary==2.9.7
+
+# EXPLANATION: Static Files Management for Production
+# Efficiently serve static files in production
+whitenoise==6.6.0
+
+# EXPLANATION: Production WSGI Server
+# High-performance server for deployment
+gunicorn==21.2.0
+
+# EXPLANATION: Environment Detection
+# Helps detect if running in development or production
+python-dotenv==1.0.0
+
+# EXPLANATION: Date/Time Processing
+# Better timezone handling
+pytz==2023.3
+
+# EXPLANATION: Testing and Code Quality (Development Dependencies)
+# Test coverage measurement
+coverage==7.3.2
+
+# EXPLANATION: API Testing Tool
+# For testing API endpoints
+requests==2.31.0
+
+# EXPLANATION: Pagination Enhancement
+# Better pagination for large datasets
+django-filter==23.5
+
+# EXPLANATION: Development Server Enhancement (Optional)
+# Better development server with auto-reload
+django-extensions==3.2.3
+
+# EXPLANATION: Database Migration Management (Optional)
+# Helps manage complex database migrations
+django-migration-rollback==0.1.0
+
+# EXPLANATION: API Documentation (Optional - for stretch goals)
+# Auto-generate API documentation
+drf-yasg==1.21.7
+
+# EXPLANATION: Performance Monitoring (Optional)
+# Monitor API performance in production
+django-debug-toolbar==4.2.0
+
+# EXPLANATION: Security Enhancements (Optional but Recommended)
+# Additional security middleware
+django-security==0.17.0
+
+# =================================================================
+# DEVELOPMENT DEPENDENCIES (Optional - for local development only)
+# Uncomment these if you want enhanced development experience
+# =================================================================
+
+# Factory Boy for test data generation
+# factory-boy==3.3.0
+
+# Faker for generating realistic test data  
+# Faker==20.1.0
+
+# Code formatting
+# black==23.11.0
+
+# Import sorting
+# isort==5.12.0
+
+# Code linting
+# flake8==6.1.0
+
+# =================================================================
+# PRODUCTION DEPENDENCIES (Cloud Storage - for stretch goals)
+# Uncomment if implementing media uploads to AWS S3
+# =================================================================
+
+# AWS SDK for S3 integration
+# boto3==1.34.0
+
+# Django S3 storage backend
+# django-storages==1.14.2
+
+# =================================================================
+# ALTERNATIVE DATABASE OPTIONS
+# Uncomment based on your database choice
+# =================================================================
+
+# MySQL Database Adapter
+# mysqlclient==2.2.0
+
+# SQLite (built into Python, no installation needed)
+# No additional package required
+
+# =================================================================
+# VERSION NOTES:
+# - All versions are pinned for reproducible builds
+# - Update versions periodically for security patches
+# - Test thoroughly after updating any dependencies
+# - Django 4.2 is LTS (supported until April 2026)
+# =================================================================
